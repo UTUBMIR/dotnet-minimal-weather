@@ -6,7 +6,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Копіюємо файл проєкту окремо для кешування шару відновлення пакетів
-COPY MyApi.csproj .
+COPY Weather.csproj .
 RUN dotnet restore
 
 # Копіюємо решту коду та публікуємо
